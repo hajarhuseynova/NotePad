@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+}
+.main {
+  background-color: #ede7f6;
+  text-align: center;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+h2 {
+  font-size: 24px;
+  padding: 20px;
+}
+input,
+textarea {
+  width: 31%;
+  padding: 10px;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+}
+textarea {
+  margin-top: 25px;
+  height: 144px;
+}
+.circles {
+  width: 30%;
+  margin: 10px auto;
+  text-align: left;
+  height: 42px;
+}
+.rounded {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.rounded > span {
+  font-size: 18px;
+  display: none;
+}
+#saveButton {
+  float: right;
+  padding: 10px 15px;
+  background-color: rgb(126, 87, 194);
+  border-radius: 10px;
+  border: 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-weight: 500;
+  color: white;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+#saveButton:hover {
+  box-shadow: 10px 10px 5px 0px rgba(126, 87, 194, 0.75);
+}
+.rounded:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+.searchDiv {
+  position: relative;
+  width: 32%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+}
+svg {
+  position: absolute;
+  right: 12px;
+  font-size: 22px;
+  top: 7px;
+}
+.cards {
+  width: 70%;
+  height: fit-content;
+  margin: 20px auto;
+}
+.footer {
+  width: 100%;
+  background-color: rgb(216, 181, 228);
+  padding: 5px 0px 50px;
+  margin-top: auto;
+}
+.links {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
