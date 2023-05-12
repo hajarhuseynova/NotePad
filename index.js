@@ -4,6 +4,7 @@ const saveButton = document.getElementById("saveButton");
 const cards = document.getElementById("cards");
 const rounded = document.querySelector(".rounded");
 const searchInput = document.getElementById("searchInput");
+const defaultDiv = document.getElementById("defaultDiv");
 
 const red = document.getElementById("red");
 const purple = document.getElementById("purple");
@@ -21,6 +22,13 @@ let selectedColor = "";
 function selectedBoxColor(color) {
   selectedColor = color;
 }
+const defaultSvg = document.getElementById("defaultSvg");
+defaultSvg.addEventListener("click", () => {
+  let rslt = confirm("Are you sure?");
+  if (rslt) {
+    defaultDiv.style.display = "none";
+  }
+});
 
 saveButton.addEventListener("click", () => {
   if (inputNote.value.trim() == "") {
@@ -55,6 +63,7 @@ saveButton.addEventListener("click", () => {
     selectedColor = "";
     display();
   }
+
   const remove = document.createElement("button");
   remove.classList.add("remove");
   remove.addEventListener("click", () => {

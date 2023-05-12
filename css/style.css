@@ -13,7 +13,6 @@ body {
 .root {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 h2 {
   font-size: 24px;
@@ -21,7 +20,7 @@ h2 {
 }
 input,
 textarea {
-  width: 31%;
+  width: 31.5%;
   padding: 10px;
   border: 1px solid rgb(126, 87, 194);
   outline-color: rgb(81, 45, 168);
@@ -163,4 +162,34 @@ img {
   background-color: transparent;
   border: transparent;
   cursor: pointer;
+}
+#defaultDiv {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  display: inline-block;
+  border-radius: 15px;
+  border: 2px dashed rgb(79, 195, 247);
+  margin: 20px 20px 10px;
+  text-align: start;
+}
+#defaultDiv > h4 {
+  padding: 10px;
+  box-sizing: border-box;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgb(79, 195, 247, 0.4);
+  font-weight: bold;
+  height: 40px;
+}
+h4 > svg {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+}
+#defaultDiv > p {
+  padding: 10px;
+  background-color: transparent;
 }
