@@ -7,7 +7,7 @@
   .searchDiv {
     width: 42%;
   }
-  .cards {
+  #cards {
     width: 75%;
   }
 }
@@ -20,7 +20,7 @@
   .searchDiv {
     width: 52%;
   }
-  .cards {
+  #cards {
     width: 80%;
   }
 }
@@ -33,7 +33,7 @@
   .searchDiv {
     width: 72%;
   }
-  .cards {
+  #cards {
     width: 85%;
   }
   .links {
@@ -45,7 +45,7 @@
   textarea,
   .circles,
   .searchDiv,
-  .cards {
+  #cards {
     width: 90%;
   }
 }
