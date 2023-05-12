@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
   font-family: "Roboto Mono", monospace;
@@ -22,7 +21,7 @@ h2 {
 }
 input,
 textarea {
-  width: 31.5%;
+  width: 30%;
   padding: 10px;
   border: 1px solid rgb(126, 87, 194);
   outline-color: rgb(81, 45, 168);
@@ -30,7 +29,7 @@ textarea {
 }
 textarea {
   margin-top: 25px;
-  height: 144px;
+  height: 122px;
 }
 .circles {
   width: 30%;
@@ -41,8 +40,7 @@ textarea {
 .rounded {
   width: 40px;
   height: 40px;
-  margin-left: 8px;
-  margin-right: 7px;
+  margin-right: 15px;
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease 0s;
@@ -67,7 +65,6 @@ textarea {
   color: white;
   transition: all 0.2s ease 0s;
   cursor: pointer;
-  margin-right: 8px;
 }
 #saveButton:hover {
   box-shadow: 10px 10px 5px 0px rgba(126, 87, 194, 0.75);
@@ -160,6 +157,7 @@ img {
   width: 40px;
   height: 40px;
   margin-left: 10px;
+  margin-top: 10px;
 }
 .remove {
   background-color: transparent;
