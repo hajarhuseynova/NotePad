@@ -114,13 +114,15 @@ function display() {
 
 searchInput.addEventListener("input", () => {
   const searchValueTitle = searchInput.value.trim().toLowerCase();
+  const searchValueText = searchInput.value.trim().toLowerCase();
   const cardsArr = [...cards.children];
   cardsArr.forEach((card) => {
     const title = card
       .querySelector("h4")
       .textContent.trim()
       .toLocaleLowerCase();
-    if (title.includes(searchValueTitle)) {
+    const text = card.querySelector("p").textContent.trim().toLocaleLowerCase();
+    if (title.includes(searchValueTitle) || text.includes(searchValueText)) {
       card.style.display = "inline-block";
     } else {
       card.style.display = "none";
