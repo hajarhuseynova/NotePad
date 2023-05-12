@@ -10,6 +10,9 @@
   #cards {
     width: 75%;
   }
+  .links {
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 1100px) {
   input,
@@ -23,12 +26,22 @@
   #cards {
     width: 80%;
   }
+  .links {
+    width: 70%;
+    margin-top: 30px;
+  }
 }
 @media only screen and (max-width: 850px) {
   input,
   textarea,
   .circles {
     width: 71%;
+  }
+  #defaultDiv,
+  .card {
+    width: 280px;
+    height: 320px;
+    margin: 15px;
   }
   .searchDiv {
     width: 72%;
@@ -37,6 +50,7 @@
     width: 85%;
   }
   .links {
+    width: 80%;
     margin-top: 20px;
   }
 }
@@ -47,6 +61,16 @@
   .searchDiv,
   #cards {
     width: 90%;
+  }
+  #defaultDiv,
+  .card {
+    width: 260px;
+    height: 300px;
+    margin: 10px;
+  }
+  .links {
+    width: 90%;
+    margin-top: 15px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -63,5 +87,11 @@
     height: 25px;
     margin-right: 0px;
     transform: translateY(5px);
+  }
+  #defaultDiv,
+  .card {
+    width: 240px;
+    height: 280px;
+    margin: 10px 0px;
   }
 }
