@@ -33,7 +33,7 @@ textarea {
 }
 .circles {
   width: 30%;
-  margin: 10px auto;
+  margin: 12px auto;
   text-align: left;
   height: 42px;
 }
@@ -49,7 +49,7 @@ textarea {
   align-items: center;
   float: left;
 }
-.span {
+.rounded > span {
   font-size: 18px;
   display: none;
 }
@@ -99,10 +99,14 @@ svg {
   width: 70%;
   height: fit-content;
   margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card {
   width: 300px;
   height: 350px;
+  position: relative;
   display: inline-block;
   border-radius: 15px;
   border: 2px dashed;
@@ -115,6 +119,14 @@ svg {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   font-weight: bold;
+  height: 40px;
+}
+h4 > svg {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 11px;
 }
 .card > p {
   padding: 10px;
@@ -144,4 +156,9 @@ img {
   width: 40px;
   height: 40px;
   margin-left: 10px;
+}
+.remove {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
 }
