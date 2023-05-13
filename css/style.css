@@ -132,6 +132,12 @@ h4 > svg {
 .card > p {
   padding: 10px;
   background-color: transparent;
+
+  height: 76%;
+  text-align: left;
+  margin: 0px;
+  overflow: auto;
+  font-size: 14px;
 }
 .footer {
   width: 100%;
